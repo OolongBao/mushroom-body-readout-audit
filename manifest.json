@@ -1,0 +1,48 @@
+{
+  "task": "PUBLICATION-20261023-V1",
+  "scope": "Four saved files to complete summary statistics only; no native trajectories or prediction regeneration",
+  "human_verification": "PENDING",
+  "submission_ready": false,
+  "files": [
+    {
+      "path": "data/cold_evidence.json",
+      "bytes": 2487,
+      "sha256": "b6dc940548c89aeb49af7eb7b23eb66493ecd4491461a5444b811ce4dc82037b"
+    },
+    {
+      "path": "data/measurements.json",
+      "bytes": 367488,
+      "sha256": "a5b71599b553056b104c35d6059341d2bc5b916ace4151a5d19fa1e1ef1f9173"
+    },
+    {
+      "path": "data/predictions.json",
+      "bytes": 100933,
+      "sha256": "c1eb446055ebc629886a3071cb0933b0752850dae0e744c659f82f4c8b9019f2"
+    },
+    {
+      "path": "data/statistics.json",
+      "bytes": 629031,
+      "sha256": "8e31b57310ea0a283e28e2a67d9dec454ed212aa25e369f95f34642fdd7920c3"
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "source": "data/measurements.json;data/predictions.json",
+      "locator": "rows; jobs",
+      "claim": "16 shared seed blocks x4 mappings,64 tasks,1024 paired endpoint rows"
+    },
+    {
+      "id": "C2",
+      "source": "data/statistics.json",
+      "locator": "roles.primary/auxiliary.cells[*].methods",
+      "claim": "All-grid descriptive MAE R1 exceeds input_steady, not pointwise dominance"
+    },
+    {
+      "id": "C3",
+      "source": "data/measurements.json",
+      "locator": "rows[*].observed,role,dose",
+      "claim": "Primary280nonzero;auxiliary295nonzero;primarygain1 213 and gain0.25 67"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "task": "PUBLICATION-20261023-V1",
+  "verified_on": "2026-10-23 Asia/Shanghai",
+  "python": "3.11.9",
+  "status": "LOCAL_VERIFIED_REVIEW_PASS",
+  "scope": "Saved-data arithmetic only, no native model calls",
+  "tests": {
+    "command": "python -B -m unittest discover -s . -p test_audit_saved.py -v",
+    "passed": 14,
+    "exit_code": 0
+  },
+  "saved_data_audit": {
+    "command": "python -B audit_saved.py",
+    "exit_code": 0,
+    "status": "SAVED_SUMMARIES_REPRODUCED",
+    "primary_cells": 32,
+    "auxiliary_cells": 32,
+    "rows": 1024,
+    "manifest_files": 4
+  },
+  "portability": {
+    "outside_working_directory": "PASS",
+    "independent_temporary_copy": "PASS",
+    "data_bytes": 1099939,
+    "model_calls": 0
+  },
+  "privacy": {
+    "absolute_local_paths_or_obvious_credential_strings_in_data": "NO_MATCH",
+    "note": "Pattern scan and restricted file allowlist, not a guarantee against all possible sensitive content"
+  },
+  "candidate": [
+    {
+      "file": "audit_saved.py",
+      "sha256": "4c0689ea556f89ceb541defa19e1300111f2166120b5bfca0b6e35dc6b11dbad",
+      "bytes": 9512
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "24bada1cac2bfb3d8eb62021ceab7f0c31aabdfb04b6d56b1d549adc933d74ed",
+      "bytes": 1532
+    },
+    {
+      "file": "PROVENANCE.json",
+      "sha256": "a630019623dac866875e95f5f26c42db1472e91a0f878fa98fb520c74bd8e7a2",
+      "bytes": 1853
+    },
+    {
+      "file": "README.md",
+      "sha256": "150695ea23c8ef64ba1476a8a3a42a7faea1341c6040805b0306b6625903ccd5",
+      "bytes": 3699
+    },
+    {
+      "file": "REPORT.md",
+      "sha256": "cffe59255bbb62f15815dc920b0de4c8367e24d2c8c71d7c631dcf4f1894694c",
+      "bytes": 4337
+    },
+    {
+      "file": "RIGHTS.md",
+      "sha256": "d5c561bd807ceccbcdc969e803d68ef13b31064b0685031f3a7555b70ef4c71e",
+      "bytes": 1161
+    },
+    {
+      "file": "test_audit_saved.py",
+      "sha256": "fe68decedd3602ff05440e52c6ea501a66b1c53110659ead2825f510c3d2a6ae",
+      "bytes": 6097
+    }
+  ],
+  "review": {
+    "status": "PASS",
+    "method": "Independent SOL read-only review; model route gpt-6.1-sol/high accepted",
+    "tests_passed": 14,
+    "outside_directory_audit": "PASS",
+    "data_byte_identity": "PASS",
+    "privacy_pattern_scan": "NO_MATCH",
+    "scope": "Technical release review, not human scientific endorsement"
+  },
+  "scientific_pass": false,
+  "human_verification": "PENDING",
+  "submission_ready": false
+}

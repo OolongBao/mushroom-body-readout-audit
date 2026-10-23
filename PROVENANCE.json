@@ -1,0 +1,46 @@
+{
+  "task": "PUBLICATION-20261023-V1",
+  "extracted_on": "2026-10-23 Asia/Shanghai",
+  "batch_label": "cross-mapping-formal64-certified-v5-20261020",
+  "source_author_repo": "https://github.com/InsectRobotics/IncentiveCircuit",
+  "source_author_commit": "1610c80072fe8bb59bd397e7a61f716393a509b9",
+  "data_bytes": 1099939,
+  "data_files": [
+    {
+      "path": "data/cold_evidence.json",
+      "bytes": 2487,
+      "sha256": "b6dc940548c89aeb49af7eb7b23eb66493ecd4491461a5444b811ce4dc82037b"
+    },
+    {
+      "path": "data/measurements.json",
+      "bytes": 367488,
+      "sha256": "a5b71599b553056b104c35d6059341d2bc5b916ace4151a5d19fa1e1ef1f9173"
+    },
+    {
+      "path": "data/predictions.json",
+      "bytes": 100933,
+      "sha256": "c1eb446055ebc629886a3071cb0933b0752850dae0e744c659f82f4c8b9019f2"
+    },
+    {
+      "path": "data/statistics.json",
+      "bytes": 629031,
+      "sha256": "8e31b57310ea0a283e28e2a67d9dec454ed212aa25e369f95f34642fdd7920c3"
+    }
+  ],
+  "extraction": "Exact byte copies of four saved result files; no simulation executed during publication",
+  "source_record_statuses": {
+    "statistics": "COMPLETE_FIXED16_DESCRIPTIVE",
+    "original_final_validation": "VERIFIED_COMPLETE_NOT_SCIENTIFIC_PASS",
+    "outer_final": "FINALIZATION_PENDING_NOT_CERTIFIED",
+    "completion_certificate": false
+  },
+  "not_bundled": [
+    "Native trajectories and intermediate state/frozen capsules",
+    "Original launch grants, original entire scientific source tree or local history",
+    "Full dependency lock/environment and author reference arrays"
+  ],
+  "reference_boundary": "Frozen refs inside predictions identify historical artifacts but cannot resolve within this package. Inherited v2 task labels are retained, not altered.",
+  "scientific_pass": false,
+  "human_verification": "PENDING",
+  "submission_ready": false
+}
